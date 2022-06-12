@@ -1,0 +1,96 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+ion-slides {
+  height: 100%;
+  cursor: grab;
+}
+
+.swiper-pagination-bullet {
+  @apply bg-kg-ljusgul bottom-1;
+}
+
+.container {
+  @apply w-full max-w-6xl m-auto mb-12;
+}
+
+.maplink {
+  @apply mt-8;
+}
+
+.maplink a {
+  text-decoration: underline;
+}
+
+.image-and-title {
+  @apply relative;
+}
+
+.title-header {
+  @apply cursor-pointer absolute bottom-0 z-10 text-white flex flex-row w-full p-6 hover:text-black hover:bg-kg-gron transition-all duration-150;
+}
+
+.title-header svg path {
+  fill: white;
+}
+
+.title-header:hover svg path,
+.container.active .title-header svg path {
+  fill: black;
+}
+
+.container.active .title-header {
+  @apply bg-kg-gron text-black;
+}
+
+.title-container {
+  @apply flex flex-col flex-grow;
+}
+
+.title-container h1 {
+  @apply font-alpina-extended italic md:text-xl;
+}
+
+.title-container h2 {
+  @apply font-alpina-standard md:text-lg;
+}
+
+.info-container {
+  @apply max-h-0 overflow-hidden transition-all duration-150;
+}
+
+.info {
+  @apply bg-kg-gron p-6 grid md:grid-cols-2 gap-5;
+}
+
+.description {
+  @apply font-alpina-standard md:text-lg;
+}
+
+.directions {
+  @apply font-tilde md:text-base;
+}
+
+.container.active .info-container {
+  max-height: 800px;
+}
+
+button.expand-info {
+  @apply flex-grow-0;
+}
+
+button.expand-info span { display: none; }
+
+button.expand-info svg {
+  @apply h-10;
+
+  transform: rotate(0); /* Equal to rotateZ(45deg) */
+  transition: all 100ms ease-in-out;
+}
+
+.container.active button.expand-info svg {
+  transform: rotate(45deg);
+}

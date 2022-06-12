@@ -1,0 +1,28 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.footer-container {
+  @apply w-full bg-kg-gul flex flex-col md:flex-row items-start justify-between p-5 pb-14;
+}
+
+.socials {
+  @apply mb-6 md:mb-0;
+}
+
+.socials svg {
+  @apply h-7 lg:h-8;
+}
+
+.socials svg:nth-child(1) {
+  @apply ml-2 mr-1;
+}
+
+.h-6 { @apply h-6; }
+
+.h-8 { @apply h-8; }
+
+.takk { @apply font-tilde text-sm pb-3; }
+

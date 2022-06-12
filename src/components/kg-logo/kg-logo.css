@@ -1,0 +1,19 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.logo {
+  @apply fixed top-0 w-full z-50 bg-no-repeat bg-logo-twolines md:bg-logo-oneline;
+
+  padding-bottom: 19.20%;
+  text-indent: -9999px;
+  pointer-events: none;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    padding-bottom: 6.5%;
+  }
+}

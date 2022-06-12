@@ -1,0 +1,13 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.introtext {
+  @apply flex flex-col font-alpina-standard bg-kg-ljusgul text-black md:text-lg max-w-4xl m-auto my-6 p-6;
+}
+
+.introtext p + p {
+  margin-top: 1em;
+}
